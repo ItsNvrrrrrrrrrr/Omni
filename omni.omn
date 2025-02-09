@@ -1,0 +1,9 @@
+get Scanner.Util;
+
+public object omni {
+    public static void main(String[] args){
+        new input = Scanner.Util();
+        nString user = input.getString("Enter your name: ");
+        out.println("your name is".plus user);
+    }
+}

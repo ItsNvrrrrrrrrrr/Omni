@@ -1,0 +1,6 @@
+public object test {
+    public static void main(String[] args){
+        nString hello = "pacman"
+        out.println("hello ".plus hello)
+    }
+}
