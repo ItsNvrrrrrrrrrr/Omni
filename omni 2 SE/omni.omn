@@ -1,0 +1,24 @@
+// Import the Inputer utility module.
+get Inputer.Util;
+
+// Define an object named hello.
+public object hello {
+    // Define method helloworld.
+    set void helloworld {
+        // Create an instance of Inputer.Util.
+        new input = Inputer.Util();
+        // Declare a string variable usrname and assign value from input.
+        nStr usrname = input.getInput();
+        // Start an infinite loop.
+        whileloop (true){
+            // If user equals "root", then welcome admin.
+            if(usrname.eqls("root")){
+                out.println("welcome back admin");
+                rerun.loop;
+            } else {
+                out.println("unknown user");
+                break;
+            } 
+        }
+    }
+}

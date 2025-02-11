@@ -1,9 +1,11 @@
-get Scanner.Util;
+from gtts import gTTS
+import os
 
-public object omni {
-    public static void main(String[] args){
-        new input = Scanner.Util();
-        nString user = input.getString("Enter your name: ");
-        out.println("your name is".plus user);
-    }
-}
+def text_to_speech(text, lang='en', filename='output.mp3'):
+    tts = gTTS(text=text, lang=lang)
+    tts.save(filename)
+    os.system(f"start {filename}")
+
+if __name__ == "__main__":
+    text = "Hello, this is a text to speech conversion."
+    text_to_speech(text)
